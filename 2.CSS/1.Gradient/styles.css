@@ -1,0 +1,30 @@
+/* Linear gradient */
+.box {
+  border: 1px solid black;
+  height: 200px;
+  width: 150px;
+  background-image: linear-gradient(red, blue);
+  background-image: linear-gradient(to left, red, orange,yellow,blue, green);
+  background-image: linear-gradient(to right, red, blue, green);
+  background-image: linear-gradient(to top, red, blue, green);
+  background-image: linear-gradient(to bottom, red, blue, green);
+  background-image: linear-gradient(to bottom left, red, blue, green);
+  background-image: linear-gradient(to bottom right, red, blue, green);
+  background-image: linear-gradient(to top right, red, blue, green);
+  background-image: linear-gradient(to top left, red,orange,yellow,green,blue,indigo,violet);
+}
+.mydiv{
+    border: 1px solid black;
+    height : 300px;
+    margin: 10px;
+    background-image: radial-gradient(circle,red,yellow,green);
+    background-image: radial-gradient(yellow 5%,orange 10%,red 50%);
+}
+.cone{
+    border: 1px solid black;
+    margin:10px;
+    width: 200px;
+    height: 200px;
+    padding: 2px;
+    background-image: conic-gradient(orange 0deg,white 90deg,green 180deg);
+}

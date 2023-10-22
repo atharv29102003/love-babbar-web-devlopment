@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+*::selection {
+  color: yellow;
+  background-color: green;
+}
+:root {
+  --bgOrange: #e84949;
+}
+#wrapper {
+  height: 100vh;
+  /* width: 100vw; */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+}
+.logo-Container {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+.logo {
+  height: 50px;
+}
+.logo-text {
+  position: relative;
+  bottom: 0;
+  margin-left: -0.1rem;
+  font-size: 28px;
+}
+.nav-items {
+  display: flex;
+  gap: 2rem;
+  padding: 0 4em;
+}
+.nav-items div {
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.8s;
+}
+a {
+  text-decoration: none;
+}
+.nav-items div:hover {
+  font-weight: bold;
+}
+.hero-section {
+  position: relative;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+
+  gap: 5rem;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  padding-bottom: 8rem;
+}
+.faded-text {
+  user-select: none;
+  font-size: 7em;
+  color: rgb(231, 231, 231);
+
+  bottom: -16%;
+  left: -5%;
+  font-weight: bold;
+  transition: all 3s;
+}
+.hero-section-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.hero-section-heading {
+  font-size: 35px;
+  color: #343d68;
+  font-weight: 500;
+}
+.role {
+  font-weight: 800;
+  color: #4e45d5;
+}
+.hero-section-sub-heading {
+  font-size: 45px;
+  line-height: 45px;
+}
+.hero-section-description {
+  margin-top: 1rem;
+  width: 70%;
+  font-weight: 500;
+}
+.btn-pink {
+  background-color: var(--bgOrange);
+  width: fit-content;
+  color: white;
+  padding: 0.8rem 2.3rem;
+  box-shadow: 5px 5px 7px 0px #0000003f;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-weight: 500;
+  border: solid 3px transparent;
+  position: relative;
+  z-index: 1;
+}
+.btn-pink::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.8s;
+}
+.btn-pink:hover::before {
+  transform: scaleX(1);
+}
+.btn-pink:hover {
+  border: solid 3px var(--bgOrange);
+  color: black;
+}
+.hero-section-right {
+  position: relative;
+  /* display: ; */
+}
+.absolute {
+  position: absolute;
+}
+.user-image {
+  padding: 2.5rem;
+  filter: grayscale(1);
+  transition: all 1s;
+  animation: scaleImage 5s infinite;
+}
+.user-image img {
+  z-index: -9;
+  height: 400px;
+}
+@keyframes scaleImage {
+  0% {
+    filter: grayscale(0);
+    transform: scale(1);
+  }
+  50% {
+    filter: grayscale(1);
+    transform: scale(1.1);
+    box-shadow: 3px 3px 10px black;
+  }
+  100% {
+    filter: grayscale(0);
+    transform: scale(1);
+  }
+}
+.icon-dots {
+  z-index: 9;
+  bottom: -1rem;
+  right: 0;
+  animation-name: dotsAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.icon-dots img {
+  height: 100px;
+}
+@keyframes dotsAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.icon-cube {
+  z-index: 9;
+  top: -0.8em;
+  right: 1em;
+  animation: cubeRotate 3s infinite;
+}
+.icon-cube img {
+  height: 40px;
+}
+@keyframes cubeRotate {
+  0% {
+    transform: translateY(0) rotateY(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotateY(180deg);
+  }
+  100% {
+    transform: translateY(0) rotateY(360deg);
+  }
+}
+.icon-circle {
+  z-index: 9;
+  left: 0;
+  bottom: 0;
+  animation: shakeEffect 5s linear infinite;
+}
+.icon-circle img {
+  height: 30px;
+}
+@keyframes shakeEffect {
+  50% {
+    left: 5%;
+    bottom: 10%;
+  }
+}
+
+.icon-zigzag {
+  z-index: 9;
+  transform: rotateY(180deg);
+  left: -2rem;
+  top: 1rem;
+  animation: zigzagAnimation 5s ease-in infinite;
+}
+.icon-zigzag img {
+  height: 100px;
+}
+@keyframes zigzagAnimation {
+  50% {
+    left: -1rem;
+    top: 2%;
+  }
+}
+.icon-plus {
+  z-index: 9;
+  top: -0.8rem;
+  left: 50%;
+  transform: rotate(50deg);
+  animation: shakeEffectPlus 5s ease-in infinite;
+}
+@keyframes shakeEffectPlus {
+  50% {
+    top: -5px;
+    left: 48%;
+  }
+}
