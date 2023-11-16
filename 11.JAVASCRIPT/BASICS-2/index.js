@@ -128,6 +128,7 @@
 // }
 
 // 2.via assigning
+<<<<<<< HEAD
 // let dest = Object.assign({}, src);
 
 // 3.via spread
@@ -136,3 +137,6 @@
 // Garbage Collection: helps us find the variables and constants that are not in use and deallocate the memory given to them automatically
 // garbage collector is the tool in js that does garbage collection
 // it runs in the background and continues its work.
+=======
+
+>>>>>>> 2647c4805893753d93e8ce473dbfab50a19f0576
