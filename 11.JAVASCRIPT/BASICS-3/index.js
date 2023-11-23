@@ -36,3 +36,31 @@
 
 // ARRAYS (IMPORTANT)
 
+// let numbers = [1, 2, 3, 7];
+// console.log(numbers);
+// console.log(numbers[0]);
+// Insertion in an array
+// numbers.push(9); //inserting an element in the end of an array
+// console.log(numbers);
+// numbers.unshift(8); //inserting an element in the beginning of array
+// console.log(numbers);
+// numbers.splice(3, 0, "a", "b", "c"); //inserting an element in the middle of array
+// console.log(numbers); // here 3 indicates index,0 indicates delete count and the other three indicate te elements to be inserted
+
+//Searching in an array
+// console.log(numbers.indexOf(7));
+
+// check if number exist in an array or not
+// console.log(numbers.includes(7));
+// console.log(numbers.indexOf(4, 2));
+
+// Now we start coding on assertive type i.e. objects
+let courses = [
+  { no: 1, naam: "Atharv" },
+  { no: 2, naam: "Deshpande" },
+];
+console.log(courses);
+// console.log(courses.indexOf({ no: 1, naam: "Atharv" })); //yaha ka jo object hai aur array ka jo object hai vo alag hai
+// console.log(courses.includes({ no: 1, naam: "Atharv" })); //yaha ka jo object hai aur array ka jo object hai vo alag hai
+
+// we use call back functions for searching in array of objects
