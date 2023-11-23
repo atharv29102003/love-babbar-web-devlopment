@@ -64,3 +64,7 @@ console.log(courses);
 // console.log(courses.includes({ no: 1, naam: "Atharv" })); //yaha ka jo object hai aur array ka jo object hai vo alag hai
 
 // we use call back functions for searching in array of objects
+let course = courses.find(function (course) {
+  return course.naam == "Atharv";
+});
+console.log(course);
